@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mood</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Font Awsome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+    <!-- Start header -->
+    <div class="header">
+        <div class="content" >
+            <audio>
+                <source src="./audio/RainSound.mp4" type="audio/mpeg">
+                <source src="./audio/RainSound.mp4" type="audio/mpeg">
+                <source src="./audio/RainSound.mp4" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <input  type="range"  id="range" value="100" maxlength="100" min="0" max="100" step="5">
+
+            <!-- <button  onclick="document.querySelector('audio').volume += 0.1"  id="vU"><i class="fas fa-volume-up"></i></button>
+            <button  onclick="document.querySelector('audio').volume -= 0.1" id="vL"><i class="fas fa-volume-down"></i></button> -->
+            <button id="btnAud"><i class="fas fa-play"></i></button>
+            <!-- <video autoplay muted src="./video/rain.mp4"></video> -->
+        </div>
+        <div class="overlay" ></div>
+        <div class="container">
+            <div style=" transition: 0.3s; opacity: 0;" class="showcase">
+                <div class="logo">moods</div>
+                <ul>
+                    <li><a id="pointer" href="./index.html"><i class="fas fa-cloud-showers-heavy"></i>rain</a></li>
+                    <li><a id="pointer" href="./fire.html"><i class="fas fa-fire-alt"></i>fire</a></li>
+                    <li><a id="pointer" href="./ocean.html"><i class="fas fa-water"></i>Ocean</a></li>
+                    <!-- <li><a href="#">Space</a></li> -->
+                </ul>
+            </div>
+            <div class="text">
+                <div class="logo">
+                    <h2>Mood</h2>  
+                </div>
+                <button style="cursor: pointer;" id="btnNav"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- End header -->
+    <!-- Start Social -->
+    <div class="hi">
+
+    <div class="social">
+        <a href="https://www.facebook.com/yassien.haikal/"><i class="fab fa-facebook-f"></i></a> 
+        <a href="https://wa.me/01558854716"><i class="fab fa-whatsapp"></i></a> 
+        <a href="https://www.instagram.com/elda3es/"><i class="fab fa-instagram"></i></a> 
+    </div>
+    <!--End Social-->
+    <!-- Start Footer  -->
+    <div class="footer">
+
+
+            <div class="copy">Copyright &#169; <script>let nowDate = new Date(); document.write(nowDate.getFullYear()); </script> Yassien Waleed Haikal - All Rights Reserved</div>
+            <h2>
+                Created and Designded By <a href="mailto:yassienwyh0@gmail.com">Yassien Waleed</a> 
+                ; Email: <span><a href="mailto:ywyhinfo@gmail.com">ywyhinfo@gmail.com</a></span>
+            </h2>
+
+    </div>
+</div>
+
+    <!-- End Footer  -->
+    <script src="master.js"></script>
+</body>
+</html>
